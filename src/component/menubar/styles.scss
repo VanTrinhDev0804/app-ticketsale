@@ -1,0 +1,84 @@
+@import '../../assets//styles/variables';
+@import '../../assets//styles/mixins';
+
+.ant-layout-sider-children {
+    width: 320px;
+    background-color: $bgDfPage;
+    display: flex;
+    justify-content: center;
+
+}
+.sider{
+    flex: none  !important;
+    max-width:400px !important;
+    width: 320px !important;
+}
+
+.Menubar {
+    width: 250px;
+    position: relative;
+
+    &-Logo {
+        margin-top: 18px;
+        margin-bottom: 75px;
+    }
+
+    .ant-menu,
+    .ant-menu-sub.ant-menu-inline {
+        background-color: $bgDfPage;
+        border: none;
+    }
+
+    .ant-menu {
+        img {
+            opacity: 0.6;
+        }
+    }
+
+
+
+    .ant-menu-item-selected {
+        color: $whiteColor;
+    }
+
+    .ant-menu-inline .ant-menu-item::after {
+        border: none;
+    }
+
+    .ant-menu-inline .ant-menu-item {
+        width: 252px;
+        height: 56px;
+        border-radius: 8px;
+    }
+
+    .ant-menu-title-content,
+    .ant-menu-submenu-title .ant-menu-item-icon+span,
+    .ant-menu-item .ant-menu-item-icon+span {
+        @include text-default;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+        background-color: $menuItemColor;
+        .ant-menu-title-content {
+            color: $whiteColor;
+            opacity: 1;
+        }
+    }
+
+    .symbol_alta {
+        position: absolute;
+        bottom: 32px;
+        left: 0;
+
+        p {
+            @include text-default;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+
+}

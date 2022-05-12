@@ -1,0 +1,16 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+
+.Acount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    img{
+        margin: 0 15px;
+    }
+    .ant-avatar.ant-avatar-icon {
+        margin-right: 32px;
+        display: contents;
+    }
+}
