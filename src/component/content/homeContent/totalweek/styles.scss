@@ -1,0 +1,29 @@
+@import '../../../../assets/styles/variables';
+@import '../../../../assets/styles/mixins';
+
+
+.Content-DoanhThu_TotalWeek {
+    margin-top:40px ;
+    margin-left: 24px;
+    h3 {
+        @include text-default;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        opacity: 0.5;
+    }
+
+    p {
+        @include text-default;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+
+        span {
+            @include text-default;
+            font-size: 14px;
+            line-height: 22px;
+            margin-left: 4px
+        }
+    }
+}

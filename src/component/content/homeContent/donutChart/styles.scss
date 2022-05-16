@@ -1,0 +1,56 @@
+@import '../../../../assets/styles/variables';
+@import '../../../../assets/styles/mixins';
+
+.Content-DoanhThu_ChartPackage {
+  display: flex;
+
+  &-selectdate {
+    margin-left: 24px;
+    margin-right: 48px;
+  }
+
+  &-SK,
+  &-GD {
+    // width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 45px;
+  }
+
+  &-legend {
+    margin-left: 170px;
+    margin-top: 40px;
+    &-legend_item {
+      @include text-default;
+      font-size: 14px;
+      line-height: 22px;
+      position: relative;
+   
+    }
+
+    .Content-DoanhThu_ChartPackage-legend_item::before {
+      content: "";
+      display: block;
+      width: 44px;
+      height: 20px;
+      background-color: #4F75FF;
+      border-radius: 4px;
+      position: absolute;
+      margin-left: -54px;
+    }
+    .Content-DoanhThu_ChartPackage-legend_item2::before{
+      content: "";
+      display: block;
+      width: 44px;
+      height: 20px;
+      background-color: #FF8A48;
+      border-radius: 4px;
+      position: absolute;
+      margin-left: -54px;
+    }
+
+  }
+
+}

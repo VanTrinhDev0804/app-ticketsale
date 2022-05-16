@@ -4,6 +4,8 @@ import { Layout } from 'antd'
 
 import './styles.scss'
 import HeaderPage from 'component/header'
+import ContentThongke from 'component/content/homeContent'
+import ContentHomePage from 'component/content/homeContent'
 
 const HomePageController = () => {
   return (
@@ -15,7 +17,7 @@ const HomePageController = () => {
         <HeaderPage/>
 
         {/* content */}
-
+          <ContentHomePage/>
        </Layout>
     </Layout>
   )
