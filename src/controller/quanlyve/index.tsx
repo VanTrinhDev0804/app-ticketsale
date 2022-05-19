@@ -3,6 +3,7 @@ import MenuSider from '../../component/menubar'
 import { Layout } from 'antd'
 import './styles.scss'
 import HeaderPage from 'component/header'
+import ContentQLVePage from 'component/content/quanlyVeContent'
 
 const QLVePageController = () => {
   return (
@@ -14,7 +15,7 @@ const QLVePageController = () => {
         <HeaderPage/>
 
         {/* content */}
-        <h1>Quản lý vé</h1>
+        <ContentQLVePage/>
        </Layout>
     </Layout>
   )

@@ -1,21 +1,26 @@
 @import '../../assets/styles/variables';
 
-@mixin btn {
-    width: 162px;
-    height: 40px;
-    background-color: $btnLoginColor;
-    color: $whiteColor;
-    box-shadow: 0px 0px 6px #E7E9F2;
-    border-radius: 8px;
-    border-color: $btnLoginColor;
-    margin: 0px 10px 0px 10px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: 'Nunito';
-    font-style: normal;
+@mixin btn-controldf {
+    .ant-btn-primary {
+        @include text-default();
+        padding: 11px 16px;
+        border: 1px solid #FF993C;
+        border-radius: 6px;
+        height: 48px;
+        color: #FF993C;
+        background-color: $whiteColor;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        margin: 8px;
 
-    &:hover {
+        span {
+            margin-left: 4px;
+        }
+    }
+
+
+    .ant-btn-primary:hover {
         background-color: $primaryColor;
         border-color: $primaryColor;
     }
@@ -68,5 +73,98 @@
         .anticon-search {
             color: #1E0D03;
         }
+    }
+
+    .ant-input {
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@mixin ContentDF {
+    margin-top: 20px;
+    width: 1567px;
+    height: 963px;
+    background-color: $whiteColor;
+    border-radius: 24px;
+
+    
+}
+
+@mixin tableDefault {
+    .Content-Table {
+        width: 1520px;
+
+        margin-left: 24px;
+        margin-top: 16px;
+        // scss table
+        .ant-table {
+            border-radius: 8px 8px 0px 0px;
+            width: 1519px;
+            height: 624px;
+        }
+
+        .ant-table-thead>tr>th {
+            background-color: #F7F8FB;
+            @include text-default();
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 26px;
+
+            white-space: nowrap;
+            padding: 0px 17px;
+            width: 93px;
+            height: 49px;
+        }
+
+        .ant-table-tbody>tr>td {
+            width: 162px;
+            height: 49px;
+            padding: 0px 17px;
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #535261;
+            white-space: nowrap;
+
+        }
+
+        tr:nth-child(odd) {
+            background: $whiteColor;
+        }
+
+        tr:nth-child(even) {
+            background: #F7F8FB;
+        }
+
+        .ant-table-cell {
+            a {
+                color: #4277FF;
+                text-decoration: underline;
+            }
+        }
+
+        .ant-table-pagination-right {
+            justify-content: center;
+        }
+
+        .ant-pagination-item-active {
+            border: 1px solid #FF993C;
+            border-radius: 4px;
+            color: #FF993C;
+        }
+        .ant-pagination-item-active a {
+         
+            color: #FF993C;
+        }
+        .ant-pagination-options {
+          display: none;
+        }
+
     }
 }

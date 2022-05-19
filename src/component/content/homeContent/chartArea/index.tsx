@@ -234,6 +234,7 @@ const ChartDoanhThu = () => {
         }
     ]
     const config = {
+        
         data,
         width: 1487,
         height: 266,

@@ -11,7 +11,7 @@ const HeaderPage = () => {
   return (
     <Header>
       <div className="search">
-        <SearchControll/>
+      <SearchControll placeholder='Search' width={446} height={48}/>
       </div>
       <div className="headerAcount">
         <AcountNotify/>
