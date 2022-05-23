@@ -1,0 +1,86 @@
+@import '../../../../assets//styles/variables';
+@import '../../../../assets/styles/mixins';
+
+.ControlRightDoiVe {
+    padding: 0 24px;
+
+    h2 {
+        @include text-default;
+        margin-top: 24px;
+        margin-bottom: 32px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    h3 {
+        
+        @include text-default;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        white-space: nowrap;
+ 
+    }
+   
+    
+    &-LoaiVe,
+    &-Status {
+        display:  flex;
+        
+        margin-bottom: 28px;
+        .ant-radio-group{
+            margin-left: 24px;
+        }
+        span.ant-radio + * {
+            @include text-default;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            opacity: 0.7;
+        }
+        p{
+            @include text-default;
+            margin: 0 0 0 124px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            opacity: 0.7;
+        }
+    }
+    &-day{
+        &to,
+        &from {
+            display:  inline-flex;
+            margin-bottom: 24px;
+            p {
+                @include text-default;
+                width: 70px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 26px; 
+                margin: 6px 0px;
+                white-space: nowrap;
+            }
+        }
+
+        .ant-picker {
+            margin-left: 102px;
+            padding: 8px 12px;
+            width: 192px;
+            height: 40px;
+            border: 1px solid #A5A8B1;
+            border-radius: 8px;
+
+        }
+    }
+    &-btn{
+        @include btn-controldf;
+        display: flex;
+        justify-content: center;
+        margin-top: 42px;
+        .ant-btn-primary{
+            width: 160px;
+        }
+    }
+}

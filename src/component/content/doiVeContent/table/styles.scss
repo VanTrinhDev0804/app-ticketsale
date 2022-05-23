@@ -1,4 +1,24 @@
 @import '../../../../assets//styles/variables';
 @import '../../../../assets/styles/mixins';
 
-@include tableDefault;
+.PageDoive {
+    @include tableDefault(1050px);
+
+
+
+}
+
+.model {
+    .ant-modal-content {
+        width: 758px;
+        height: 365px;
+        border-radius: 10px;
+        background: $whiteColor;
+
+        cursor: pointer !important;
+
+        .ant-modal-body {
+            padding: 0;
+        }
+    }
+}

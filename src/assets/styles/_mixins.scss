@@ -26,6 +26,32 @@
     }
 }
 
+@mixin btn-controldfBg {
+    .ant-btn-primary {
+        @include text-default();
+        padding: 11px 16px;
+        border: 1px solid #FF993C;
+        border-radius: 6px;
+        height: 48px;
+        color: $whiteColor;
+        background-color: #FF993C;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        margin: 8px;
+
+        span {
+            margin-left: 4px;
+        }
+    }
+
+
+    .ant-btn-primary:hover {
+        background-color: $primaryColor;
+        border-color: $primaryColor;
+    }
+}
+
 @mixin fontTextTitle_Content {
     font-family: 'Montserrat';
     font-style: normal;
@@ -91,19 +117,20 @@
     background-color: $whiteColor;
     border-radius: 24px;
 
-    
+
 }
 
-@mixin tableDefault {
+@mixin tableDefault ($widthtb){
     .Content-Table {
-        width: 1520px;
+        width: $widthtb;
 
         margin-left: 24px;
         margin-top: 16px;
+
         // scss table
         .ant-table {
             border-radius: 8px 8px 0px 0px;
-            width: 1519px;
+            width: $widthtb ;
             height: 624px;
         }
 
@@ -121,16 +148,16 @@
         }
 
         .ant-table-tbody>tr>td {
+            @include text-default();
             width: 162px;
             height: 49px;
             padding: 0px 17px;
-            font-family: 'Nunito';
-            font-style: normal;
-            font-weight: 400;
+            font-weight: 500;
             font-size: 14px;
-            line-height: 21px;
-            color: #535261;
+            line-height: 22px;
+            opacity: 0.7;
             white-space: nowrap;
+            cursor: pointer;
 
         }
 
@@ -143,6 +170,8 @@
         }
 
         .ant-table-cell {
+
+
             a {
                 color: #4277FF;
                 text-decoration: underline;
@@ -158,12 +187,14 @@
             border-radius: 4px;
             color: #FF993C;
         }
+
         .ant-pagination-item-active a {
-         
+
             color: #FF993C;
         }
+
         .ant-pagination-options {
-          display: none;
+            display: none;
         }
 
     }

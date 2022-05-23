@@ -10,12 +10,14 @@ const TableDSVe = () => {
         data.push({
             stt: i,
             code: `ALT2021050${i}`,
+            tenLoaive: "Vé cổng",
             soVe: randomIntFromInterval(100000, 900000),
             tenSK: "Hội chợ triển lãm tiêu dùng 2021",
             status: randomIntFromInterval(0, 2),
             dayUse: "14/04/2021",
             dayIn: "14/04/2021",
-            checkin: "Cổng 1"
+            checkin: "Cổng 1",
+            statusDS: randomIntFromInterval(-1, 1),
         })
     }
     const columns = [

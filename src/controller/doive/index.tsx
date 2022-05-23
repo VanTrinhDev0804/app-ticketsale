@@ -3,6 +3,7 @@ import MenuSider from '../../component/menubar'
 import { Layout } from 'antd'
 import './styles.scss'
 import HeaderPage from 'component/header'
+import ContentDoiVePage from 'component/content/doiVeContent'
 
 const DoivePageController = () => {
   return (
@@ -14,7 +15,7 @@ const DoivePageController = () => {
         <HeaderPage/>
 
         {/* content */}
-         <h1>Đổi vé</h1>
+        <ContentDoiVePage/>
       </Layout>
     </Layout>
   )
