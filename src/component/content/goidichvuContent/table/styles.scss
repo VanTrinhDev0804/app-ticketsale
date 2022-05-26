@@ -1,0 +1,28 @@
+@import '../../../../assets//styles/variables';
+@import '../../../../assets/styles/mixins';
+
+@include tableDefault(1520px);
+.tableGoiVe{
+    .ant-table-tbody>tr>td {
+       
+        height: 52px;
+      
+        p{
+            margin: 0;
+        }
+    
+    }
+    .day-item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .Actions_Update{
+        display:  flex;
+        align-items: center;
+        justify-content: space-evenly;
+        span{
+            color: #FF993C;
+        }
+    }
+}

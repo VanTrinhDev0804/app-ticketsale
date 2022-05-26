@@ -3,6 +3,7 @@ import MenuSider from '../../component/menubar'
 import { Layout } from 'antd'
 import './styles.scss'
 import HeaderPage from 'component/header'
+import ContentGoiDVPage from 'component/content/goidichvuContent'
 
 const CaidatPageController = () => {
   return (
@@ -14,7 +15,7 @@ const CaidatPageController = () => {
         <HeaderPage/>
 
         {/* content */}
-        <h2> Cài đặt dịch vụ</h2>
+        <ContentGoiDVPage/>
       </Layout>
     </Layout>
   )

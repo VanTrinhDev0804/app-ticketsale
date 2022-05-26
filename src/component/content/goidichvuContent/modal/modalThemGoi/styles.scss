@@ -1,0 +1,104 @@
+@import '../../../../../assets//styles/variables';
+@import '../../../../../assets/styles/mixins';
+
+
+
+.modelThemgoive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+        @include text-default;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 24px;
+    }
+
+    &-main {
+        width: 100%;
+        padding: 28px 24px;
+
+        &-Name {
+            .ant-input {
+                width: 367px;
+                height: 40px;
+                border: 1px solid #A5A8B1;
+                border-radius: 8px;
+            }
+        }
+
+        &-Day {
+            margin: 32px 0;
+            display: flex;
+
+            &_Used {
+                margin-right: 40px;
+            }
+
+            .ant-picker {
+                width: 142px;
+                height: 40px;
+                border: 1px solid #A5A8B1;
+                border-radius: 8px;
+                margin-left: 10px;
+            }
+
+
+        }
+
+
+        &-Price {
+            .ant-input {
+                width: 148px;
+                height: 40px;
+                background: #F1F4F8;
+                border-radius: 8px;
+                margin: 6px 8px;
+            }
+        }
+
+        .ant-checkbox-wrapper {
+            display: inline-flex;
+            @include text-default;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            opacity: 0.7;
+        }
+
+
+        &-Status {
+            .ant-select{
+                border: 1px solid #A5A8B1;
+                border-radius: 8px;
+                line-height: 40px;
+            }
+        }
+
+    }
+
+   
+
+
+    &-btn {
+        display: flex;
+
+        &-Huy {
+            @include btn-controldf;
+
+        }
+
+        &-Luu {
+            @include btn-controldfBg;
+        }
+
+        button {
+            width: 142px;
+        }
+
+    }
+
+}

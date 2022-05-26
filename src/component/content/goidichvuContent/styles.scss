@@ -1,0 +1,9 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+
+.Content {
+    @include ContentDF;
+    h2 {
+        @include fontTextTitle_Content
+    }
+}

@@ -1,0 +1,48 @@
+@import '../../../../assets/styles/variables';
+@import '../../../../assets//styles//mixins';
+
+.Content-control {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 24px;
+
+    &-search {
+        display: flex;
+        align-items: center;
+
+
+    }
+
+    &-GroupButton {
+        display: flex;
+
+        &-savefile {
+            @include btn-controldf;
+        }
+
+        &-them {
+            @include btn-controldfBg;
+        }
+    }
+
+  
+  
+
+}
+.modalGoiVe {
+    .ant-modal-content {
+        width: 758px;
+        height: 628px;
+        background: $whiteColor;
+        border-radius: 16px;
+        cursor: pointer !important;
+
+        .ant-modal-body {
+            padding: 0;
+        }
+
+
+
+    }
+}
